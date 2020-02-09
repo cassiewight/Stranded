@@ -1,0 +1,330 @@
+/*STRANDED CSS & HTML GAME */
+
+@import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
+
+@font-face {
+  font-family: adventure;
+  src: url(../fonts/adventure.otf);
+}
+
+
+body {
+	background-image: url("../images/ship.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	height:1000px;
+	
+}
+
+header {
+	
+	text-align:center;
+	width:800px;
+	margin:100px auto;
+
+}
+
+
+div#start {
+
+	background-color:rgba(255,255,255,0.8);
+	box-shadow: -1px 3px 28px 41px rgba(0,0,0,0.2);
+
+}
+
+header h1 {
+	padding:0;
+	padding-top:30px;
+	font-family: adventure;
+	transform:skew(-2deg, -3deg);
+	color:red;
+	font-size:80px;
+	text-shadow: 3px 3px 8px #000000;
+	
+}
+
+header p {
+
+	line-height:1.5em;
+	padding:20px 150px;
+	margin-bottom:5px;
+	font-family:'Ramabhadra', sans-serif;
+	font-size:1.2em;
+	font-style:oblique;
+	
+}
+
+div.hidden {
+
+	width:800px;
+	height:500px;
+	text-align:center;
+	margin:0 auto;
+	
+}
+
+div.hidden p {
+
+	background-color:rgba(255,255,255,0.8);
+	margin-top:10px;
+	margin-bottom:200px;
+	padding:30px 100px;
+	line-height:1.5em;
+	font-family:'Ramabhadra', sans-serif;
+}
+
+div a {
+
+	text-decoration: none;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 3px 2px 1px rgba(0,0,0,0.5);
+	color: #FFFFFF;
+	padding:7px;
+	border:2px inset;
+	font-size:1.2em;
+	font-family: 'Ramabhadra', sans-serif;
+	line-height:1.2em;
+	text-shadow: 2px 2px 4px #000000;
+	border-radius:5px;
+	text-transform:uppercase;
+	
+}
+
+a:active {
+	
+	color:#FF0000;
+}
+
+a.left {
+	float:left;
+	width:150px;
+	text-align:center;
+	margin-left:100px;
+	margin-top:0;
+	
+	
+}
+
+a.right {
+	float:right;
+	width:150px;
+	text-align:center;
+	margin-right:100px;
+	margin-top:0;
+}
+
+
+div.hidden {
+	display:none;
+
+}
+
+/*when div is targeted, it is displayed*/
+div.hidden:target {
+	display:block;
+
+}
+
+
+/*styling for each option*/
+
+.case{
+	background-size: cover;
+	background-repeat:no-repeat;
+	box-shadow: -1px 3px 28px 41px rgba(0,0,0,0.51);
+}
+
+div#one {	
+	background-image: url("../images/beach_forest.jpg");
+}
+
+div#two-a {
+	background-image: url("../images/help_run.jpg");
+}
+
+div#two-b {
+	background-image: url("../images/food_high.jpg");
+}
+
+div#three-a1 {
+	background-image: url("../images/save_ditch.jpg");
+}
+
+div#three-a2 {
+	background-image: url("../images/knife_wood.jpg");
+	
+}
+
+div#three-b1 {
+	background-image: url("../images/berries_mushroom.jpg");
+
+}
+
+div#three-b2 {
+	background-image: url("../images/tree_cliff.jpg");
+}
+
+div#four-a12 {
+	background-image: url("../images/water_fire.jpg");
+}
+
+div#four-a22 {
+	background-image: url("../images/fire_raft.jpg");
+}
+
+div#four-b12 {
+	background-image: url("../images/follow_cross.jpg");
+}
+
+div#four-b22 {
+	background-image: url("../images/jump_fight.jpg");
+
+}
+
+div#five-a {
+	background-image: url("../images/putoff_fire.jpg");
+}
+
+div#five-b {
+	background-image: url("../images/tribe_float.jpg");
+}
+
+/* Escaping (win) scenarios */
+
+div#win-1 {
+	background-image: url("../images/heli.jpg");
+	position:relative;
+}
+
+div#win-1 a{
+	margin:0 auto;
+	position:absolute;
+	bottom:20px;
+	left:42%;
+}
+
+div#win-2 {
+	background-image: url("../images/boat.jpg");
+	position:relative;
+}
+
+div#win-2 a{
+	margin:0 auto;
+	position:absolute;
+	bottom:20px;
+	left:42%;
+}
+
+/* Game Over (die) scenarios */
+
+div#die-3A1 {
+	background-image: url("../images/die_save.jpg");
+}
+
+div#die-3A2 {
+	background-image: url("../images/die_knife.jpg");
+}
+
+div#die-3B1 {
+	background-image: url("../images/die_berries.jpg");
+}
+
+div#die-3B2 {
+	background-image: url("../images/die_tree.jpg");
+}
+
+div#die-A12 {
+	background-image: url("../images/die_water.jpg");
+}
+
+div#die-A22 {
+	background-image: url("../images/die_raft.jpg");
+}
+
+div#die-B12 {
+	background-image: url("../images/die_lost.jpg");
+}
+
+div#die-4B2 {
+	background-image: url("../images/die_puma.jpg");
+}
+
+div#die-5A1 {
+	background-image: url("../images/die_putout.jpg");
+}
+
+div#die-5B1 {
+	background-image: url("../images/die_tribe.jpg");
+}
+
+div#game_over {
+
+	position:fixed;
+	top:-1000px;
+	left:0;
+	height:1000px;
+	width:100%;
+	background-color:black;
+	animation: drop_down 1s linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+#game_over h1 {
+
+	font-family: adventure, sans-serif;
+	font-size:100px;
+	background-color:black;
+	color:red;
+	line-height:1em;
+	margin-top:50px;
+
+}
+
+#game_over a {
+
+	margin:0;
+	animation: appear 2s linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+
+}
+
+@keyframes drop_down {
+
+	0% {
+
+	
+	}
+
+	100% {
+
+		transform:translateY(1000px);
+	}
+
+}
+
+@keyframes appear {
+
+	0% {
+
+		opacity:0;
+	}
+
+	60% {
+
+		opacity:0;
+	}
+
+	100% {
+
+		opacity:1;
+	}
+
+}
+
+

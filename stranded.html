@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Stranded</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/stranded.css">
+
+
+</head>
+
+<body>
+<header>
+		<h1>Stranded</h1>
+
+		<div id="start">
+			<p>You have been shipwrecked and are stuck on a deserted island.
+			You must find away to get off the island before starving to death....or worse.
+			You have until sundown to escape!</p>
+
+			<a href="#one">Start Game</a>
+		</div>
+		
+	</header>
+
+<main>
+
+<div id="one" class="hidden case">
+	<p>You escape the shipwreck with barely any scratches on you. The sun is beaming in your eyes. 
+	To your right, there is a forest that will help blot out the sun but your brain is telling you to search the beach for any other survivors.
+	<br>What do you do?</p>
+	<a href="#two-a" class="left">Explore the Beach</a>
+	<a href="#two-b" class="right">Explore the Forest</a>
+
+</div>
+
+
+<div id="two-a" class="hidden case">
+	<p>You hear yelling in the distance. You are too far away to know if it is a friend or a foe.  What should you do?</p>
+	<a href="#three-a1" class="left">Go See Who is Yelling</a>
+	<a href="#three-a2" class="right">Run Away</a>
+
+</div>
+
+<div id="two-b" class="hidden case">
+	<p>You reach the forest unharmed. Your brain is telling you to look for high ground to scope out an escape but your body
+	is growing weak and hungry.
+	<br>What do you do?
+	</p>
+	<a href="#three-b1" class="left">Look for Food</a>
+	<a href="#three-b2" class="right">Find High Ground</a>
+
+</div>
+
+<!--END LEVEL TWO-->
+
+
+<div id="three-a1" class="hidden case">
+	<p>Your friend is in the shipwreck. He spots you in the distance and yells
+	for your help. As you look around the shipwreck you notice that it is too dangerous 
+	to get to him safely. Should you risk your life to save another or ditch him and save yourself?</p>
+	<a href="#die-3A1" class="left">Save Friend</a>
+	<a href="#four-a12" class="right">Ditch</a>
+
+</div>
+
+
+<div id="three-a2" class="hidden case">
+	<p>You see two objects in the sand that must have come from the shipwreck. You spot a knife that may come in
+		handy. You also spot some wood that will aid you in starting a 
+		fire and keep you warm when the sun starts to fade.
+		<br> You can only take one object.  Which one do you choose?</p>
+	<a href="#four-a22" class="left">wood</a>
+	<a href="#die-3A2" class="right">knife</a>
+
+</div>
+
+
+<div id="three-b1" class="hidden case">
+	<p>You search for food but all you can find in the forest are some red berries and some mushrooms. 
+	As you contemplate your decision, your stomach begins to rumble. You cant wait any longer.
+	<br>What do you eat?
+	</p>
+	<a href="#die-3B1" class="left">Berries</a>
+	<a href="#four-b12" class="right">Mushrooms</a>
+
+</div>
+
+<div id="three-b2" class="hidden case">
+	<p>You want to have a good view of the island to see your surroundings. You spot a tall tree that you believe you are 
+		capable of climbing and a cliff that would give you a complete view of the island.
+		<br>What do you climb?</p>
+	<a href="#die-3B2" class="left">The Tree</a>
+	<a href="#four-b22" class="right">The Cliff</a>
+
+</div>
+
+<!--end of level three-->
+
+<div id="four-a12" class="hidden case">
+	<p>As you walk away from the shipwreck, it crumbles before your eyes.  You're thankful you made the right decision to save yourself.  Its starting to get dark and you're growing weak.
+	<br>Do you search for water or make a fire to keep warm.</p>
+	<a href="#die-A12" class="left">Look for Water</a>
+	<a href="#five-a" class="right">Make a Fire</a>
+
+</div>
+
+<div id="four-a22" class="hidden case">
+	<p>You start collecting wood and realize that there's enough to construct a raft
+	that can get you off the island or to make a huge bonfire that can signal for help.
+	<br>What do you do with the wood?</p>
+	<a href="#five-a" class="left">Make a Fire</a>
+	<a href="#die-A22" class="right">Make a Raft</a>
+
+</div>
+
+<div id="four-b12" class="hidden case">
+	<p>After your meal, you come across a river and spot your friend on the other side.  You call out but they don't hear you.  The river's current is quite strong. 
+	<br>Do you walk along the river until you find a safe crossing or take your
+	   chances and cross the river now?
+	 </p>
+	<a href="#die-B12" class="left">Follow the River</a>
+	<a href="#five-b" class="right">Cross the River</a>
+
+</div>
+
+<div id="four-b22" class="hidden case">
+	<p>You reach the top of the cliff and have a great view of the whole island.  Suddenly, a puma jumps onto the
+	cliff ready to attack you.  The only escape is to jump into river below...but it's a long way down and there might be rocks.  What do you do?</p>
+	<a href="#die-4B2" class="left">Fight the Animal</a>
+	<a href="#five-b" class="right">Jump off the Cliff</a>
+
+</div>
+
+<!--end level four-->
+
+
+<div id="five-a" class="hidden case">
+	<p>Your fire is making a lot of smoke- perfect to signal a passing plane or helicopter.  But you start to hear rumblings in the forest.  It seems your fire is attracting something-or someone.  What do you do?</p>
+	<a href="#die-5A1" class="left">Put the Fire out and Hide</a>
+	<a href="#win-1" class="right">Keep the Fire Blazing</a>
+
+</div>
+
+<div id="five-b" class="hidden case">
+	<p>You got caught up in the rapids and are flowing down the river.  Some tribe-people spot you and offer to get you out of the rapids.  Do you trust them?</p>
+	<a href="#die-5B1" class="left">Trust them and Get Out</a>
+	<a href="#win-2" class="right">Continue Down the River</a>
+
+</div>
+
+<!--Different deaths-->
+<div id="die-3A1" class="hidden case">
+	<p>You Died!<br>
+	You attempted to save your friend but the debris of the ship collapsed on top of you.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-3A2" class="hidden case">
+	<p>You Died!<br>
+	As you grab the rusty knife, you accidentally cut yourself and after a few hours, you die
+	a painful death.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-3B1" class="hidden case">
+	<p>You Died!<br>
+	You start to eat the berries, but while the rumbling of your stomach begins to stop,
+	it gets substituted with excruciating pain- The berries were poisonous!.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-3B2" class="hidden case">
+	<p>You Died!<br>
+     Just as you're about to reach the top of the tree, you stepped on a dead branch and it breaks. You fall to your 
+	 death.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-A12" class="hidden case">
+	<p>You Died!<br>
+     You find a lake and take a few sips.  However you didn't realize that there was green algae and bacteria in the water.
+	 <br>You die!
+	 </p>
+	 <a href="#game_over">Start over</a>
+</div>
+
+<div id="die-A22" class="hidden case">
+	<p>You Died!<br>
+     The raft you built was not strong enough to make it to civilization. You drown and fall into the depths
+	 of the ocean.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-B12" class="hidden case">
+	<p>You Died!<br>
+     You wander for hours with no crossing in sight.  It turns dark and you get lost in the forest, never to be seen again.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-4B2" class="hidden case">
+	<p>You Died!<br>
+     As you approach the puma, it jumps at you and you are unable to escape its grasp.
+	 You question yourself as to why you chose to fight the puma as if someone is controlling
+	 your decisions.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-5A1" class="hidden case">
+	<p>You Died!<br>
+     Unfortunately the rumbling in the forest was just birds.  Meanwhile, a helicopter passes
+	by and does not spot you. You regret ever putting the fire out.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+<div id="die-5B1" class="hidden case">
+	<p>You Died!<br>
+     You are ecstatic to see other human beings but, turns out they were not to be trusted.  They grab you and take you 
+	to their tribe where they make you their slave.</p>
+	<a href="#game_over">Start over</a>
+</div>
+
+
+<!--Wins-->
+<div id="win-1" class="hidden case">
+	<p>The rumbling in the forest stops and a passing helicopter spots your fire.<br>
+	You've been saved!</p>
+	<a href="stranded.html">Start Over</a>
+</div>
+
+<div id="win-2" class="hidden case">
+	<p>As you reach the end of the river, you spot a boat of which you 
+	use to escape the island.<br>
+	You survived!!</p>
+	<a href="stranded.html">Start Over</a>
+</div>
+
+
+<!-- not linked to anything: animation test -->
+
+<div id="game_over" class="hidden">
+	<h1>Game over</h1>
+	<a href="stranded.html">Start Over</a>
+</div>
+
+</main>
+
+
+</body>
+
+</html>
